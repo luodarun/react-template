@@ -1,0 +1,47 @@
+export default [
+  {
+    title: '校园名称',
+    dataIndex: 'schoolId',
+    search: true,
+    type: 'select',
+    needAutoRender: true,
+    dicData: [],
+    edit: true,
+    overHidden: true,
+    required: true,
+    width: 200,
+  },
+  {
+    title: '对应班级',
+    dataIndex: 'isTop',
+    type: 'select',
+    dicData: [],
+    selfSelectDic: 'forClassArray',
+    search: true,
+    required: true,
+    width: 100,
+    edit: true,
+  },
+  {
+    title: '学生姓名',
+    search: true,
+    edit: true,
+    dataIndex: 'studentName',
+  },
+  {
+    title: '是否录入成绩',
+    dataIndex: 'isLrcj',
+    type: 'select',
+    dicData: [
+      { label: '已录入', value: '1' },
+      { label: '未录入', value: '0' },
+    ],
+    search: true,
+    needAutoRender: true,
+  },
+  {
+    title: '考试类型',
+    search: true,
+    dataIndex: 'kslx',
+  },
+];
